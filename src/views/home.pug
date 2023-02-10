@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title home
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body 
+        header 
+            h1 Chatting App
+        main 
+            #welcome
+                form
+                    input(type="text", placeholder="Write Room", required, id="roomInput")
+                    button Send
+                ul
+            #room 
+                form#name
+                    input(type="text", placeholder="Write name", required)
+                    button Save
+                form#msg
+                    input(type="text", placeholder="Write msg", required)
+                    button Send 
+                h3
+                ul 
+
+            
+        script(src="/socket.io/socket.io.js")
+        script(src="/public/js/app.js")
